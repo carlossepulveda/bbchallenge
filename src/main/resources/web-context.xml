@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+       http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache-3.1.xsd" xmlns:cache="http://www.springframework.org/schema/cache">
+
+    <context:property-placeholder />
+
+    <bean id="exceptionInterceptor" class="com.bbchallenge.webapp.interceptor.ExceptionInterceptor" />
+    <bean id="securityInterceptor" class="com.bbchallenge.webapp.interceptor.SecurityInterceptor">
+    </bean>
+<!-- server configuration -->
+    
+    <bean id="freeMarkerFactory" class="com.bbchallenge.webapp.server.FreeMarkerFactory">
+        <property name="templatesDirectory" value="${BASEDIR:.}/templates/" />
+    </bean> 
+    <bean id="freeMarker" factory-bean="freeMarkerFactory" factory-method="create" />
+    <bean id="controllerLoader" class="org.jogger.routes.SpringControllerLoader" />
+    <bean id="routesLoader" class="org.jogger.routes.FileSystemRoutesLoader">
+        <property name="filePath" value="${BASEDIR:.}/routes.config" />
+        <property name="controllerLoader" ref="controllerLoader" />
+    </bean>
+    <bean id="joggerFactory" class="com.bbchallenge.webapp.server.AtartelJoggerFactory">
+        <property name="freeMarker" ref="freeMarker" />
+        <property name="routesLoader" ref="routesLoader" />
+        <property name="staticDirectory" value="${BASEDIR:.}/static" />
+    </bean>
+    <bean id="joggerServer" class="org.jogger.JoggerServer" init-method="listen" destroy-method="stop">
+        <constructor-arg>
+            <ref bean="joggerFactory"/>
+        </constructor-arg>
+        <property name="port" value="${PORT:5000}" />
+    </bean>
+
+<!-- Controllers -->
+    <bean id="webSite" class="com.bbchallenge.webapp.controller.Website" scope="prototype"/>
+
+</beans>

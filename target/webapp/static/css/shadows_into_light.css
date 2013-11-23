@@ -1,0 +1,48 @@
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:300;
+	src:local('Open Sans Light'),
+	    local('OpenSans-Light'),
+	    url('https://s3.amazonaws.com/atartel-static/css/fonts/font-open-sans/OpenSans-Light.woff') format('woff')
+}
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:400;
+	src:local('Open Sans'),
+	    local('OpenSans'),
+	    url('https://s3.amazonaws.com/atartel-static/css/fonts/font-open-sans/OpenSans.woff') format('woff')
+}
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:600;
+	src:local('Open Sans Semibold'),
+	    local('OpenSans-Semibold'),
+	    url('https://s3.amazonaws.com/atartel-static/css/fonts/font-open-sans/OpenSans-Semibold.woff') format('woff')
+}
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:700;
+	src:local('Open Sans Bold'),
+	    local('OpenSans-Bold'),
+	    url('https://s3.amazonaws.com/atartel-static/css/fonts/font-open-sans/OpenSans-Bold.woff') format('woff')
+}
+@font-face{
+	font-family:'Open Sans';
+	font-style:normal;
+	font-weight:800;
+	src:local('Open Sans Extrabold'),
+	    local('OpenSans-Extrabold'),
+	    url('https://s3.amazonaws.com/atartel-static/css/fonts/font-open-sans/OpenSans-Extrabold.woff') format('woff')
+}
+@font-face{
+	font-family:'Shadows Into Light';
+	font-style:normal;
+	font-weight:400;
+	src:local('Shadows Into Light'),
+	    local('ShadowsIntoLight'),
+	    url('https://s3.amazonaws.com/atartel-static/css/fonts/font-open-sans/ShadowsIntoLight.woff') format('woff')
+}
