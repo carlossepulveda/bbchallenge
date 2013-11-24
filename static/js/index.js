@@ -1,5 +1,12 @@
 var IndexView = Backbone.View.extend({
         
+        el : $('body'),
+
+		events : {
+			'click .view-map' : 'clickViewMap',
+			'click .view-list' : 'clickViewList'
+		},
+
         initialize : function() {
             _.bindAll(this, 'initMap', 'renderMap','drawCurrentPosition');
             google.maps.event.addDomListener(window, 'load', this.renderMap);
@@ -42,5 +49,24 @@ var IndexView = Backbone.View.extend({
                 };
                 this.initMap(geoPosition);
             }
-        }
+        },
+
+		clickViewList : function() {
+			$('.view-type-buttons').removeClass('ui-btn-active');
+			$('.view-list').addClass('ui-btn-active');
+
+			$('.viewport').hide();
+			$('.viewport-list').show();
+			$('.places-list').show();
+
+		},
+
+		clickViewMap : function() {
+			$('.view-type-buttons').removeClass('ui-btn-active');
+			$('.view-map').addClass('ui-btn-active');
+
+			$('.viewport').hide();
+			$('.viewport-map').show();
+			$('.places-list').hide();
+		}
 });
