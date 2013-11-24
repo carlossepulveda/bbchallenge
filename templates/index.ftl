@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
         <link rel="stylesheet" href="/css/jquery.mobile-1.3.2.min.css" />
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCyg4UjkI7R0fiSGbuvCsuYYqPHQ6WYyhc&sensor=true"></script>
     </head>
     <body>
         <!-- Start of first page -->
@@ -26,9 +27,9 @@
                         </span>
                     </a>
                 </p>  
-                <p style="background-color:black;height:300px;color:white">
-                    div map
-                </p>   
+                
+                    <div id="map" style="height:400px;"></div>
+                  
                 
             </div><!-- /content -->
 
@@ -60,12 +61,15 @@
 
 
     </body>
+
     <script type="text/javascript" src="/js/libs/jquery.min.js"></script>
     <script type="text/javascript" src="/js/libs/jquery.mobile.js"></script>
     <script type="text/javascript" src="/js/libs/underscore-min.js"></script>
     <script type="text/javascript" src="/js/libs/backbone-0.9.2.min.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
+    
     <script>
         new IndexView();
     </script>
+
 </html>

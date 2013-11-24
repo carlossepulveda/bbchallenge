@@ -1,5 +1,5 @@
-[00:50:37,445] INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71457184: startup date [Sat Nov 23 00:50:37 COT 2013]; root of context hierarchy
-[00:50:37,493] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/home/elibom/workspace/bbChallenge/target/classes/web-context.xml]
-[00:50:37,696] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448dbd82: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,exceptionInterceptor,securityInterceptor,freeMarkerFactory,freeMarker,controllerLoader,routesLoader,joggerFactory,joggerServer,webSite]; root of factory hierarchy
-[00:50:37,857] INFO  [org.eclipse.jetty.server.Server] jetty-8.1.7.v20120910
-[00:50:37,884] INFO  [org.eclipse.jetty.server.AbstractConnector] Started SelectChannelConnector@0.0.0.0:5000
+[02:18:35,787] INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c907aee: startup date [Sat Nov 23 02:18:35 COT 2013]; root of context hierarchy
+[02:18:35,837] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/home/fintech/bbchallenge/target/classes/web-context.xml]
+[02:18:36,051] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3debc153: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,exceptionInterceptor,securityInterceptor,freeMarkerFactory,freeMarker,controllerLoader,routesLoader,joggerFactory,joggerServer,webSite]; root of factory hierarchy
+[02:18:36,233] INFO  [org.eclipse.jetty.server.Server] jetty-8.1.7.v20120910
+[02:18:36,275] INFO  [org.eclipse.jetty.server.AbstractConnector] Started SelectChannelConnector@0.0.0.0:5000
