@@ -1,7 +1,7 @@
 <#ftl encoding="UTF-8">
 <!DOCTYPE html>
     <head>
-        <title>Page Title</title> 
+        <title>CreditCP</title> 
         
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
 
@@ -36,28 +36,20 @@
                 <p class="viewport-list viewport" style="background-color:blue; display : none">
                     <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e" data-count-theme="b" style="display:none" class="places-list">
                         <li><a>
-                            <img src="img/coin.jpg" style="float:left"/>
-                            <span>Punto en Arturo Calle</span>
+                            <img src="img/arturocalle.jpg" style="float:left"/>
+                            <span>Arturo Calle</span>
                         </a></li>
                         <li><a>
-                            <img src="img/coin.jpg" style="float:left"/>
-                            <span>Punto en Arturo Calle</span>
+                            <img src="img/studiof.jpg" style="float:left"/>
+                            <span>Studio F</span>
                         </a></li>
                         <li><a>
-                            <img src="img/facebook.jpg" style="float:left"/>
-                            <span>Nicolas ha acumulado 3000 puntos</span>
+                            <img src="img/wok-logo.jpg" style="float:left"/>
+                            <span>WOK</span>
                         </a></li>
                         <li><a>
-                            <img src="img/coin.jpg" style="float:left"/>
-                            <span>Punto en Arturo Calle</span>
-                        </a></li>
-                        <li><a>
-                            <img src="img/foursquare.png" style="float:left"/>
-                            <span>Sofia ha acumulado 1000 puntos</span>
-                        </a></li>
-                        <li><a>
-                            <img src="img/offer.jpg" style="float:left"/>
-                            <span>Nueva oferta en Studio F</span>
+                            <img src="img/andresdc.jpg" style="float:left"/>
+                            <span>Andre D.C</span>
                         </a></li>
                     </ul>
                 </p>  

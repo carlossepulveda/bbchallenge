@@ -12,61 +12,63 @@
         <div data-role="page" id="places">
 
             <div data-role="header">
-                <div data-role="navbar" data-iconpos="bottom">
-                    <ul>
-                        <li><a href="#places" class="ui-btn-active">Lugares</a></li>
-                        <li><a href="#prom" data-icon="">Promociones</a></li>
-                        <li><a href="#not" class="count">Notificaciones</a></li>
-                    </ul>
-                </div>
+                <h3>Plus Card</h3>
             </div><!-- /header -->
 
             <div data-role="content">   
 
-                <div data-role="controlgroup" data-type="horizontal">
-                    <a class="ui-btn-active view-map view-type-buttons" data-role="button">Mapa</a>
-                    <a class="view-list view-type-buttons" data-role="button">Lista</a>
-                </div>
-   
-                <p class="viewport-map viewport">
-                    <div id="map" style="height:450px;"></div>
-                </p>   
-                <p class="viewport-list viewport" style="background-color:blue; display : none">
-                    <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e" data-count-theme="b" style="display:none" class="places-list">
-                        <li><a>
-                            <img src="img/coin.jpg" style="float:left"/>
-                            <span>Punto en Arturo Calle</span>
-                        </a></li>
-                        <li><a>
-                            <img src="img/coin.jpg" style="float:left"/>
-                            <span>Punto en Arturo Calle</span>
-                        </a></li>
-                        <li><a>
-                            <img src="img/facebook.jpg" style="float:left"/>
-                            <span>Nicolas ha acumulado 3000 puntos</span>
-                        </a></li>
-                        <li><a>
-                            <img src="img/coin.jpg" style="float:left"/>
-                            <span>Punto en Arturo Calle</span>
-                        </a></li>
-                        <li><a>
-                            <img src="img/foursquare.png" style="float:left"/>
-                            <span>Sofia ha acumulado 1000 puntos</span>
-                        </a></li>
-                        <li><a>
-                            <img src="img/offer.jpg" style="float:left"/>
-                            <span>Nueva oferta en Studio F</span>
-                        </a></li>
-                    </ul>
+                <p>
+                    <form id="login-form" onsubmit="return false;" action="">
+             
+                        <fieldset data-role="fieldcontain"> 
+                            <label for="username">Correo:</label>
+                            <input type="text" name="username" id="username">
+                        </fieldset>
+             
+                        <fieldset data-role="fieldcontain"> 
+                            <label for="password">Contraseña:</label>
+                            <input type="password" name="password" id="password">
+                        </fieldset>
+             
+                        <input class="login-button" type="button" value="Ingresar">
+             
+                    </form>
                 </p>  
             </div><!-- /content -->
 
-            <!--<div data-role="footer">
-                <h4>Page Footer</h4>
-            </div> /footer -->
         </div><!-- /page -->
 
 
+        <!-- Start of second page -->
+        <div data-role="page" id="social">
+
+            <div data-role="header">
+                <h3>Obtiene puntos registrando tus redes sociales</h3>
+            </div><!-- /header -->
+
+            <div data-role="content">   
+
+                <p>
+                   <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e" data-count-theme="b">
+                        <li><a>
+                            <img src="img/facebook.jpg" style="float:left"/>
+                            <span>Acumula 100 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/foursquare.png" style="float:left"/>
+                            <span>Acumula 100 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/waze.jpg" style="float:left"/>
+                            <span>Acumula 100 puntos</span>
+                        </a></li>
+
+                    </ul>
+                    <input class="continue-button" type="button" value="Continuar">
+                </p>  
+            </div><!-- /content -->
+
+        </div><!-- /page -->
 
     </body>
 
@@ -74,10 +76,10 @@
     <script type="text/javascript" src="/js/libs/jquery.mobile.js"></script>
     <script type="text/javascript" src="/js/libs/underscore-min.js"></script>
     <script type="text/javascript" src="/js/libs/backbone-0.9.2.min.js"></script>
-    <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/login.js"></script>
     
     <script>
-        new IndexView();
+        new LoginView();
     </script>
 
 </html>

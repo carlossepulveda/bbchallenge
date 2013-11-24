@@ -24,6 +24,15 @@ var IndexView = Backbone.View.extend({
               mapTypeId: google.maps.MapTypeId.ROADMAP
             });
             this.drawCurrentPosition(this.map, markerCurrentPosition);
+
+            var m1 = new google.maps.LatLng(4.663859, -74.063671);
+            this.drawCurrentPosition(this.map, m1);
+            var m2 = new google.maps.LatLng(4.675322, -74.049252);
+            this.drawCurrentPosition(this.map, m2);
+            var m3 = new google.maps.LatLng(4.648631, -74.066761);
+            this.drawCurrentPosition(this.map, m3);
+            var m3 = new google.maps.LatLng(4.649316, -74.102982);
+            this.drawCurrentPosition(this.map, m4);
         },
 
         drawCurrentPosition : function(map, marker) {
@@ -56,6 +65,7 @@ var IndexView = Backbone.View.extend({
 			$('.view-list').addClass('ui-btn-active');
 
 			$('.viewport').hide();
+			$('#map').hide();
 			$('.viewport-list').show();
 			$('.places-list').show();
 
@@ -66,6 +76,7 @@ var IndexView = Backbone.View.extend({
 			$('.view-map').addClass('ui-btn-active');
 
 			$('.viewport').hide();
+			$('#map').show();
 			$('.viewport-map').show();
 			$('.places-list').hide();
 		}

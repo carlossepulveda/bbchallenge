@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-[02:18:35,787] INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@1c907aee: startup date [Sat Nov 23 02:18:35 COT 2013]; root of context hierarchy
-[02:18:35,837] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/home/fintech/bbchallenge/target/classes/web-context.xml]
-[02:18:36,051] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3debc153: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,exceptionInterceptor,securityInterceptor,freeMarkerFactory,freeMarker,controllerLoader,routesLoader,joggerFactory,joggerServer,webSite]; root of factory hierarchy
-[02:18:36,233] INFO  [org.eclipse.jetty.server.Server] jetty-8.1.7.v20120910
-[02:18:36,275] INFO  [org.eclipse.jetty.server.AbstractConnector] Started SelectChannelConnector@0.0.0.0:5000
-=======
-[12:20:35,570] INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71457184: startup date [Sun Nov 24 12:20:35 COT 2013]; root of context hierarchy
-[12:20:35,618] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/home/elibom/workspace/bbchallenge/target/classes/web-context.xml]
-[12:20:35,838] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448dbd82: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,exceptionInterceptor,securityInterceptor,freeMarkerFactory,freeMarker,controllerLoader,routesLoader,joggerFactory,joggerServer,webSite]; root of factory hierarchy
-[12:20:36,020] INFO  [org.eclipse.jetty.server.Server] jetty-8.1.7.v20120910
-[12:20:36,051] INFO  [org.eclipse.jetty.server.AbstractConnector] Started SelectChannelConnector@0.0.0.0:5000
->>>>>>> Mejora estructura de la aplicacion
+[16:05:49,008] INFO  [org.springframework.context.support.ClassPathXmlApplicationContext] Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@71457184: startup date [Sun Nov 24 16:05:49 COT 2013]; root of context hierarchy
+[16:05:49,056] INFO  [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/home/elibom/workspace/bbchallenge/target/classes/web-context.xml]
+[16:05:49,262] INFO  [org.springframework.beans.factory.support.DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@448dbd82: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,exceptionInterceptor,securityInterceptor,freeMarkerFactory,freeMarker,controllerLoader,routesLoader,joggerFactory,joggerServer,webSite]; root of factory hierarchy
+[16:05:49,439] INFO  [org.eclipse.jetty.server.Server] jetty-8.1.7.v20120910
+[16:05:49,466] INFO  [org.eclipse.jetty.server.AbstractConnector] Started SelectChannelConnector@0.0.0.0:5000
