@@ -18,4 +18,7 @@ public class Website {
         response.contentType(ResponseFormat.HTML.getContentType()).render("index.ftl");
     }
 
+    public void login(Request request, Response response) {
+        response.contentType(ResponseFormat.HTML.getContentType()).render("login.ftl");
+    }
 }

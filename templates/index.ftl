@@ -10,27 +10,57 @@
     </head>
     <body>
         <!-- Start of first page -->
-        <div data-role="page" id="foo">
+        <div data-role="page" id="places">
 
             <div data-role="header">
-                <h1>
-                    Tienes 1000 puntos acumulados
-                </h1>
+                <div style="padding : 5px;">Bienvenido Carlos <div style="float:right; padding-right: 20px">100 disponibles</div></div>
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="#places" class="ui-btn-active">Lugares</a></li>
+                        <li><a href="#prom" data-icon="">Promociones</a></li>
+                        <li><a href="#not" class="count">Notificaciones</a></li>
+                    </ul>
+                </div>
             </div><!-- /header -->
 
             <div data-role="content">   
-                <p><h4></h4></p> 
-                <p>
-                    <a href="#bar" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
-                        <span class="ui-btn-inner ui-btn-corner-all">
-                            <span class="ui-btn-text">Ver Promociones</span>
-                        </span>
-                    </a>
+
+                <div data-role="controlgroup" data-type="horizontal">
+                    <a class="ui-btn-active view-map view-type-buttons" data-role="button">Mapa</a>
+                    <a class="view-list view-type-buttons" data-role="button">Lista</a>
+                </div>
+   
+                <p class="viewport-map viewport">
+                    <div id="map" style="height:450px;"></div>
+                </p>   
+                <p class="viewport-list viewport" style="background-color:blue; display : none">
+                    <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e" data-count-theme="b" style="display:none" class="places-list">
+                        <li><a>
+                            <img src="img/coin.jpg" style="float:left"/>
+                            <span>Punto en Arturo Calle</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/coin.jpg" style="float:left"/>
+                            <span>Punto en Arturo Calle</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/facebook.jpg" style="float:left"/>
+                            <span>Nicolas ha acumulado 3000 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/coin.jpg" style="float:left"/>
+                            <span>Punto en Arturo Calle</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/foursquare.png" style="float:left"/>
+                            <span>Sofia ha acumulado 1000 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/offer.jpg" style="float:left"/>
+                            <span>Nueva oferta en Studio F</span>
+                        </a></li>
+                    </ul>
                 </p>  
-                
-                    <div id="map" style="height:400px;"></div>
-                  
-                
             </div><!-- /content -->
 
             <!--<div data-role="footer">
@@ -40,25 +70,105 @@
 
 
         <!-- Start of second page -->
-        <div data-role="page" id="bar">
+        <div data-role="page" id="prom">
 
             <div data-role="header">
-                <h1>Inicio/Submenu</h1>
-            </div><!-- /header -->
+                <div style="padding : 5px">Bienvenido Carlos <div style="float:right; padding-right: 20px">100 disponibles</div></div>
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="#places" data-icon="">Lugares</a></li>
+                        <li><a href="#prom" class="ui-btn-active">Promociones</a></li>
+                        <li><a href="#not" class="count">Notificaciones</a></li>
+                    </ul>
+                </div>
+            </div>
 
             <div data-role="content">  
-                <p>Submenu</p>  
                 <p>
-                    <a href="#foo" data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="c" class="ui-btn ui-shadow ui-btn-corner-all ui-btn-up-c">
-                        <span class="ui-btn-inner ui-btn-corner-all">
-                            <span class="ui-btn-text">Regresar al inicio"</span>
-                        </span>
-                    </a>
-                </p>   
+                    <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e" data-count-theme="b">
+                        <li><a>
+                            <img src="img/iphone.jpg" style="float:left"/>
+                            <span>Iphone 5</span><br/><span font-size="12px" font-style="normal">Ahorra 20% con 200 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/ccolombia.jpg"/> 
+                            <span>Camiseta Seleccion Colombia</span><br/><span font-size="12px" font-style="normal">Ahorra 20% con 150 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/gasolina.jpg"/> 
+                            <span>Estacion de servicio</span><br/><span font-size="12px" font-style="normal">Ahorra 15% con 120 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/adidas.jpg"/> 
+                            <span>Zapatos Adidas</span><br/><span font-size="12px" font-style="normal">Ahorra 40% con 200 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/wok.jpg"/> 
+                            <span>WOK</span><br/><span font-size="12px" font-style="normal">Ahorra 10% con 100 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/supermercado.jpg"/> 
+                            <span>Mercado en almacenes XYZ</span><br/><span font-size="12px" font-style="normal">Ahorra 10% con 300 puntos</span>
+                        </a></li>
+                    </ul>
+                </p>  
             </div><!-- /content -->
 
         </div><!-- /page -->
 
+
+        <!-- Start of third page -->
+        <div data-role="page" id="not">
+
+            <div data-role="header">
+                <div style="padding : 5px">Bienvenido Carlos <div style="float:right; padding-right: 20px">100 disponibles</div></div>
+                <div data-role="navbar" data-iconpos="bottom">
+                    <ul>
+                        <li><a href="#places" data-icon="">Lugares</a></li>
+                        <li><a href="#prom">Promociones</a></li>
+                        <li><a href="#not" class="ui-btn-active" class="count">Notificaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-role="content">  
+                <p>
+                    <p>
+                    <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="e" data-count-theme="b">
+                        <li><a>
+                            <img src="img/coin.jpg" style="float:left"/>
+                            <span>Punto en Arturo Calle</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/coin.jpg" style="float:left"/>
+                            <span>Punto en Arturo Calle</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/foursquare.png" style="float:left"/>
+                            <span>Haz ganado 10 puntos con tu publicacion</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/facebook.jpg" style="float:left"/>
+                            <span>Nicolas ha acumulado 3000 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/coin.jpg" style="float:left"/>
+                            <span>Punto en Arturo Calle</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/foursquare.png" style="float:left"/>
+                            <span>Sofia ha acumulado 1000 puntos</span>
+                        </a></li>
+                        <li><a>
+                            <img src="img/offer.jpg" style="float:left"/>
+                            <span>Nueva oferta en Studio F</span>
+                        </a></li>
+                    </ul>
+                </p>
+                </p>  
+            </div><!-- /content -->
+
+        </div><!-- /page -->
 
     </body>
 
